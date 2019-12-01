@@ -2,7 +2,7 @@ import csv
 
 def save_to_file(jobs):
     # open or create the result CSV file
-    file = open("./../published/jobs.csv", mode="w", encoding="utf-8")
+    file = open("./../published/jobs.csv", mode="w", encoding="utf-8", newline="")
     writer = csv.writer(file)
     writer.writerow(["title", "company", "location", "link"])
 
